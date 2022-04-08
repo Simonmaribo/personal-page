@@ -1,4 +1,6 @@
 import { MantineProvider, NormalizeCSS, GlobalStyles } from '@mantine/core';
+import Meta from '../components/Meta';
+
 import '../styles/globals.css'
 
 function MyApp({ Component, pageProps }) {
@@ -14,6 +16,7 @@ function MyApp({ Component, pageProps }) {
       }}
     >
     <NormalizeCSS />
+      <Meta/>
       <Component {...pageProps} />
   </MantineProvider>
   )

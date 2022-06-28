@@ -31,20 +31,13 @@ export default function Home() {
           <ContactIcon href="https://www.facebook.com/simon.maribo.18" icon={<FaFacebookSquare style={{ width: 25, height: 25 }}/>}/>
           <ContactIcon href="mailto:simonmaribo@outlook.dk" icon={<FaEnvelope style={{ width: 25, height: 25 }}/>}/>
         </Box>
-        <MediaQuery query="(max-width: 360px)" styles={{ flexDirection: 'column', gap: 20}}>
-          <Box sx={{ marginTop: 35, display: 'flex', flexDirection: 'row', gap: 50}}>
-            <Detail title="4" description="Years of experience"/>
-            <Detail title="25+" description="Completed projects"/>
-            <Detail title="10+" description="Satisfied customers"/>
-          </Box>
-        </MediaQuery>
       </Container>
       <Box sx={{
         display: 'flex',
         flexGrow: 1,
         justifyContent: 'center',
         marginBottom: 100,
-        marginTop: 100
+        marginTop: 50
       }}>
         <ProjectRow>
           <Project 
@@ -60,6 +53,13 @@ export default function Home() {
             title="Plexit"
             description="Danish Minecraft Server Network"
             year={"Since 2021"}
+          />
+          <Project 
+            img={"/projects/centox.png"}
+            href="https://github.com/simonmaribo/centox"
+            title="Centox"
+            description="A self-hosted solution for creating/managing forms and applications."
+            year={"Since 2022"}
           />
         </ProjectRow>
       </Box>
